@@ -266,6 +266,7 @@ To identify poorly tested classes for generating additional test cases, the JaCo
     \item \texttt{org.apache.commons.dbutils.QueryRunner}
     \item \texttt{org.apache.commons.dbutils.AsyncQueryRunner}
     \item \texttt{org.apache.commons.dbutils.AbstractQueryRunner}
+    \item \texttt{org.apache.commons.dbtils.BeanProcessor}
 \end{itemize}
 
 To generate test cases with Randoop, the following command was issued on project level in Windows 10 PowerShell:
@@ -306,7 +307,8 @@ Afterall, Randoop is a tool based on random generation. If no randomness control
 
 \subsection*{Generation of Test Cases with GitHub Copilot}
 
-While it makes sense to use Randoop on more classes, because in theory the tool is meant to be used on whole projects, we wanted to target the test generation with GitHub Copilot even more on still poorly tested classes. Therefore, the \texttt{BaseResultSetHandler}, \texttt{AsyncQueryRunner} (especially the inner classes), and \texttt{DbUtils} classes were chosen as subjects for the test generation with GitHub Copilot, as they stick out with results below 75\% for line, instruction, and branch coverage and mutation coverage below 50\%.
+While it makes sense to use Randoop on more classes, because in theory the tool is meant to be used on whole projects, we wanted to target the test generation with GitHub Copilot even more on still poorly tested classes. Therefore, the \texttt{BaseResultSetHandler}, \texttt{AsyncQueryRunner} (especially the inner classes), and \texttt{DbUtils} \\
+classes were chosen as subjects for the test generation with GitHub Copilot, as they stick out with results below 75\% for line, instruction, and branch coverage and mutation coverage below 50\%.
 
 \subsubsection*{\textbf{Test Generation for BaseResultSetHandler}}
 
